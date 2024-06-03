@@ -9,7 +9,7 @@ fname=name;
 }
 
 public static void main(String[] args) {
-    construc myConstruc=new construc(2000, "Ahalya");
+    construc myConstruc=new construc(2000, "Anu");
     System.out.println(myConstruc.bornYr+ " "+myConstruc.fname);
 }
 }
