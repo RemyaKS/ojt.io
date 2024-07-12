@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const num = prompt("Enter the number:");
+        const number = parseFloat(num); // Convert the input to a number
+
+        function checkNumberNestedIf(num) {
+            if (isNaN(num)) {
+                console.log("Invalid input.");
+            } else {
+                if (num > 0) {
+                    console.log("The number is greater than zero.");
+                } else {
+                    if (num < 0) {
+                        console.log("The number is less than zero.");
+                    } else {
+                        if (num === 0) {
+                            console.log("The number is zero.");
+                        }
+                    }
+                }
+            }
+        }
+
+        checkNumberNestedIf(number); // Call the function with the converted number
+    </script>
+</body>
+</html>
